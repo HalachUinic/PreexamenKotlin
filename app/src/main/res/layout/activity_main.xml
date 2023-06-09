@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="Calculo de pago de nomina"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="27dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/lblNombre" />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Nombre del trabajador"
+        android:textColor="@color/white"
+        android:id="@+id/lblNombre"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/lblTitulo"
+
+        >
+    </TextView>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:id="@+id/txtNombre"
+        android:hint="Nombre de Usuario"
+        android:textSize="20dp"
+        android:textColorHint="#605F5F"
+        app:layout_constraintTop_toBottomOf="@id/lblNombre"
+        android:textAlignment="center"
+        ></EditText>
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="412dp"
+        android:layout_height="234dp"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintTop_toBottomOf="@id/txtNombre"
+        tools:ignore="MissingConstraints">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/btnEntrar"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="#3A7A3D"
+        android:text="Entrar"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        tools:layout_editor_absoluteX="55dp"
+        tools:ignore="MissingConstraints">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="#9E1E1E"
+        android:text="Salir"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/btnEntrar"
+
+        tools:layout_editor_absoluteX="55dp"
+        tools:ignore="MissingConstraints">
+
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
